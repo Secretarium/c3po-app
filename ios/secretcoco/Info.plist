@@ -54,6 +54,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
     <key>NSBluetoothAlwaysUsageDescription</key>
-    <string>Secret Coco uses bluetooth to scan its surroundings</string>
+    <string>We uses Bluetooth to scan other beacons around.</string>
 </dict>
 </plist>
