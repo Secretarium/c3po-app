@@ -22,8 +22,6 @@ import { Colors, } from 'react-native/Libraries/NewAppScreen';
 import KeepAwake from 'react-native-keep-awake';
 import TestAnimation from './TestAnimation';
 
-declare var global: { HermesInternal: null | {} };
-
 const App = () => {
     return (
         <>
@@ -32,11 +30,6 @@ const App = () => {
                 <ScrollView
                     contentInsetAdjustmentBehavior="automatic"
                     style={styles.scrollView}>
-                    {global.HermesInternal == null ? null : (
-                        <View style={styles.engine}>
-                            <Text style={styles.footer}>Engine: Hermes PLop</Text>
-                        </View>
-                    )}
                     <View style={styles.body}>
                         <KeepAwake />
                         <View style={styles.sectionContainer}>
