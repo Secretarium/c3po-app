@@ -1,6 +1,11 @@
 var defaultPlugins = [
     '@typescript-eslint',
-    'jest'
+    'flowtype',
+    'import',
+    'react',
+    'react-hooks',
+    'jest',
+    'jsx-a11y'
 ];
 
 var javascriptExtensions = [
@@ -87,10 +92,4 @@ module.exports = {
             rules: defaultRules
         }
     ]
-};
-module.exports = {
-    root: true,
-    extends: '@react-native-community',
-    parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint'],
 };
