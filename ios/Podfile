@@ -93,12 +93,3 @@ target 'secretcoco' do
     flipper_post_install(installer)
   end
 end
-
-target 'secretcoco-tvOS' do
-  # Pods for secretcoco-tvOS
-
-  target 'secretcoco-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-end
