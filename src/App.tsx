@@ -9,22 +9,15 @@
  */
 
 import React from 'react';
-import {
-    SafeAreaView,
-    StyleSheet,
-    ScrollView,
-    View,
-    Text,
-    StatusBar,
-} from 'react-native';
-
+import { SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar, } from 'react-native';
+import { Providers } from './Providers';
 import { Colors, } from 'react-native/Libraries/NewAppScreen';
 import KeepAwake from 'react-native-keep-awake';
 import TestAnimation from './TestAnimation';
 
 const App = () => {
     return (
-        <>
+        <Providers>
             <StatusBar barStyle="dark-content" animated={true} networkActivityIndicatorVisible={false} />
             <SafeAreaView>
                 <ScrollView
@@ -38,7 +31,7 @@ const App = () => {
                     </View>
                 </ScrollView>
             </SafeAreaView>
-        </>
+        </Providers>
     );
 };
 
