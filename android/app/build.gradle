@@ -214,7 +214,7 @@ dependencies {
         implementation jscFlavor
     }
 
-    compile project(':react-native-keep-awake')
+    implementation project(':react-native-keep-awake')
     implementation project(':lottie-react-native')
 }
 

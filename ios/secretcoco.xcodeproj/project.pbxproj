@@ -286,8 +286,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-secretcoco-secretcocoTests/Pods-secretcoco-secretcocoTests-frameworks.sh",
-				"${PODS_ROOT}/../../node_modules/react-native-kontaktio/ios/KontaktSDK.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-secretcoco-secretcocoTests/Pods-secretcoco-secretcocoTests-frameworks.sh"
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -349,7 +348,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-secretcoco/Pods-secretcoco-frameworks.sh",
-				"${PODS_ROOT}/../../node_modules/react-native-kontaktio/ios/KontaktSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (

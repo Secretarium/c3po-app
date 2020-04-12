@@ -7,7 +7,7 @@ import { StatusBar, } from 'react-native';
 import StorybookUI from '../storybook';
 import { Providers } from './Providers';
 import TestAnimation from './TestAnimation';
-import TestBeacon from './components/TestBeacon';
+import { TestBeacon } from './components/TestBeacon';
 import { Navigator, Screen } from './modules/navigation/Navigator';
 
 const App = () => {
