@@ -2163,6 +2163,14 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-native-app-intro-slider@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/react-native-app-intro-slider/-/react-native-app-intro-slider-3.0.1.tgz#0b6421f9fbbb7668dba58ac5b56e6f532390cdcb"
+  integrity sha512-LEPIavQvydIUmuXGUhfsqI8IJXujsnfyD6sOFq3UPVlpI4NmJECD3ajYVW9w//X4EJajeti0Y4d5d97D1TOE3A==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
+
 "@types/react-native-keep-awake@2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@types/react-native-keep-awake/-/react-native-keep-awake-2.0.2.tgz#a4229dd39ebb7c3d9a99c8e484c1bdc1fbec28a6"
@@ -2170,7 +2178,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native@0.62.2":
+"@types/react-native@*", "@types/react-native@0.62.2":
   version "0.62.2"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.62.2.tgz#f3e150f308c27089cefbcbfa3eb6cc14db279b2f"
   integrity sha512-oIUIbqZNN9vRnGKWHYbTVp/GyTqdaM5mfy1s4zsi6BYvHAaFOPZ32IrhIHno/A5XOv4wuGfE7g5fliDk/H0+/Q==
@@ -10251,9 +10259,15 @@ react-native-animatable@1.3.3:
   dependencies:
     prop-types "^15.7.2"
 
-react-native-ble-advertiser@vitorpamplona/react-native-ble-advertiser:
-  version "0.0.10"
-  resolved "https://codeload.github.com/vitorpamplona/react-native-ble-advertiser/tar.gz/74b913b381bd0a53a545f717fc525d749dd7bcf6"
+react-native-app-intro-slider@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-app-intro-slider/-/react-native-app-intro-slider-4.0.0.tgz#f11841ec96bd4ef949750d62c64284980bec8f04"
+  integrity sha512-aQucxBkRpGBDC3NJ85gcPRjlCrQ35l1i00RE7Ta5UIsbHFWkhcFYR0hPyGr9Q8j301A4Q0SqXDDMvF/eCGi+NA==
+
+react-native-ble-advertiser@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/react-native-ble-advertiser/-/react-native-ble-advertiser-0.0.11.tgz#c5aa8449c593eaf3b9c6b5842392197400ab096c"
+  integrity sha512-d+OsukT0M0iqCNP+jfj6J9s921yMCJ4MqLKLxcbRTk0nAXKrPV0NcH87dtmMjcBBno5MSeY2PCt41JeDVClloQ==
 
 react-native-color-picker@^0.4.0:
   version "0.4.6"
