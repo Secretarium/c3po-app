@@ -1,27 +1,17 @@
-var defaultPlugins = [
-    '@typescript-eslint',
-    'flowtype',
-    'import',
-    'react',
-    'react-hooks',
-    'jest',
-    'jsx-a11y'
-];
+var baseConfig = require('@react-native-community/eslint-config');
 
-var javascriptExtensions = [
-    'eslint:recommended'
-];
-
-var typescriptExtensions = javascriptExtensions.concat([
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended'
-]);
-
-var defaultRules = {
+var defaultPlugins = baseConfig.plugins;
+var defaultEnv = baseConfig.env;
+var defaultGlobals = baseConfig.globals;
+var defaultRules = Object.assign({}, baseConfig.rules, {
     'indent': [
         'error',
         4,
         { 'SwitchCase': 1 }
+    ],
+    'comma-dangle': [
+        'error',
+        'never'
     ],
     'no-unused-vars': [
         'warn',
@@ -38,8 +28,17 @@ var defaultRules = {
     '@typescript-eslint/no-unused-vars': [
         'warn',
         { 'argsIgnorePattern': '^__unused__' }
-    ],
-};
+    ]
+});
+
+var javascriptExtensions = [
+    'eslint:recommended'
+];
+
+var typescriptExtensions = javascriptExtensions.concat([
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended'
+]);
 
 module.exports = {
     root: true,
@@ -49,16 +48,32 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: 'module'
     },
+    settings: {
+        react: {
+            version: 'detect'
+        }
+    },
+    globals: defaultGlobals,
     plugins: defaultPlugins,
     rules: defaultRules,
     overrides: [
+        {
+            files: [
+                '*eslint*',
+                '*config.js',
+                'scripts/*'
+            ],
+            env: {
+                node: true
+            }
+        },
         {
             files: [
                 '**/*.ts', '**/*.tsx'
             ],
             globals: {
                 Atomics: 'readonly',
-                SharedArrayBuffer: 'readonly',
+                SharedArrayBuffer: 'readonly'
             },
             extends: typescriptExtensions,
             rules: defaultRules

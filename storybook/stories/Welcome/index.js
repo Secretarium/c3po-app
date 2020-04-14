@@ -7,17 +7,17 @@ export default class Welcome extends React.Component {
         wrapper: {
             flex: 1,
             padding: 24,
-            justifyContent: 'center',
+            justifyContent: 'center'
         },
         header: {
             fontSize: 18,
-            marginBottom: 18,
+            marginBottom: 18
         },
         content: {
             fontSize: 12,
             marginBottom: 10,
-            lineHeight: 18,
-        },
+            lineHeight: 18
+        }
     };
 
     showApp = event => {
@@ -42,16 +42,16 @@ export default class Welcome extends React.Component {
                 <Text style={this.styles.content}>
                     We have added some stories inside the "storybook/stories" directory for examples. Try
                     editing the "storybook/stories/Welcome.js" file to edit this message.
-        </Text>
+                </Text>
             </View>
         );
     }
 }
 
 Welcome.defaultProps = {
-    showApp: null,
+    showApp: null
 };
 
 Welcome.propTypes = {
-    showApp: PropTypes.func,
+    showApp: PropTypes.func
 };

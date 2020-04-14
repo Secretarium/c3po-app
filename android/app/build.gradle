@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.secretcoco"
+        applicationId "com.secretarium.apps.c3po"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

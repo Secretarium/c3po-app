@@ -5,7 +5,7 @@
  * @format
  */
 
-const { getDefaultConfig } = require("metro-config");
+const { getDefaultConfig } = require('metro-config');
 
 module.exports = (async () => {
     const {
@@ -16,13 +16,13 @@ module.exports = (async () => {
             getTransformOptions: async () => ({
                 transform: {
                     experimentalImportSupport: false,
-                    inlineRequires: false,
-                },
+                    inlineRequires: false
+                }
             }),
-            babelTransformerPath: require.resolve("react-native-less-transformer")
+            babelTransformerPath: require.resolve('react-native-less-transformer')
         },
         resolver: {
-            sourceExts: [...sourceExts, "less"]
+            sourceExts: [...sourceExts, 'less']
         }
     };
 })();

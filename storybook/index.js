@@ -12,7 +12,7 @@ configure(() => {
 // To find allowed options for getStorybookUI
 const StorybookUIRoot = getStorybookUI({
     port: 7007,
-    host: "192.168.1.6",
+    host: '192.168.1.6',
     onDeviceUI: true,
     resetStorybook: true,
     asyncStorage: null

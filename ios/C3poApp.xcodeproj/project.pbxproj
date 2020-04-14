@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* secretcocoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* secretcocoTests.m */; };
+		00E356F31AD99517003FC87E /* C3poAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* C3poAppTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		390B6F4BEBD1969EE00017B7 /* libPods-secretcoco-secretcocoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD7A3282C5C999EFD8B9A4A /* libPods-secretcoco-secretcocoTests.a */; };
-		6048CB5EB8AA1CDAE7425138 /* libPods-secretcoco.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9E118C93DA10CA0833A49A /* libPods-secretcoco.a */; };
+		390B6F4BEBD1969EE00017B7 /* libPods-C3poApp-C3poAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD7A3282C5C999EFD8B9A4A /* libPods-C3poApp-C3poAppTests.a */; };
+		6048CB5EB8AA1CDAE7425138 /* libPods-C3poApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9E118C93DA10CA0833A49A /* libPods-C3poApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,36 +22,30 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = secretcoco;
+			remoteInfo = C3poApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* secretcocoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = secretcocoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* C3poAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = C3poAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* secretcocoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = secretcocoTests.m; sourceTree = "<group>"; };
-		07A9BBDA317E76FFCB57ECF3 /* Pods-secretcoco-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretcoco-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-secretcoco-tvOS/Pods-secretcoco-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		07C43AA92CF2EAA4D2AC4B1E /* libPods-secretcoco-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-secretcoco-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* Secret Coco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secret Coco.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = secretcoco/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = secretcoco/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* C3poAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C3poAppTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* C3PO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C3PO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = C3poApp/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = C3poApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = secretcoco/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = secretcoco/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = secretcoco/main.m; sourceTree = "<group>"; };
-		1CE9F219FC747F3A91179683 /* Pods-secretcoco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretcoco.release.xcconfig"; path = "Target Support Files/Pods-secretcoco/Pods-secretcoco.release.xcconfig"; sourceTree = "<group>"; };
-		4BD7A3282C5C999EFD8B9A4A /* libPods-secretcoco-secretcocoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-secretcoco-secretcocoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E9E118C93DA10CA0833A49A /* libPods-secretcoco.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-secretcoco.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		64E8B890B1895BC1D4C7F7D9 /* Pods-secretcoco-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretcoco-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-secretcoco-tvOSTests/Pods-secretcoco-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		72DF6C38D2C3077BFE1D574F /* Pods-secretcoco-secretcocoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretcoco-secretcocoTests.debug.xcconfig"; path = "Target Support Files/Pods-secretcoco-secretcocoTests/Pods-secretcoco-secretcocoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		75AC6D730739F712BE119BC2 /* libPods-secretcoco-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-secretcoco-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C33617D45BEBA4779DDAF5AE /* Pods-secretcoco-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretcoco-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-secretcoco-tvOSTests/Pods-secretcoco-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		C3F2A69549FD9EDDE90689BB /* Pods-secretcoco-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretcoco-tvOS.release.xcconfig"; path = "Target Support Files/Pods-secretcoco-tvOS/Pods-secretcoco-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		E61BEFCA663BC4E07E066B56 /* Pods-secretcoco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretcoco.debug.xcconfig"; path = "Target Support Files/Pods-secretcoco/Pods-secretcoco.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = C3poApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = C3poApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = C3poApp/main.m; sourceTree = "<group>"; };
+		1CE9F219FC747F3A91179683 /* Pods-C3poApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3poApp.release.xcconfig"; path = "Target Support Files/Pods-C3poApp/Pods-C3poApp.release.xcconfig"; sourceTree = "<group>"; };
+		4BD7A3282C5C999EFD8B9A4A /* libPods-C3poApp-C3poAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-C3poApp-C3poAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9E118C93DA10CA0833A49A /* libPods-C3poApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-C3poApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DF6C38D2C3077BFE1D574F /* Pods-C3poApp-C3poAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3poApp-C3poAppTests.debug.xcconfig"; path = "Target Support Files/Pods-C3poApp-C3poAppTests/Pods-C3poApp-C3poAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E61BEFCA663BC4E07E066B56 /* Pods-C3poApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3poApp.debug.xcconfig"; path = "Target Support Files/Pods-C3poApp/Pods-C3poApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F5875CF8EDB95D3F625FBF2F /* Pods-secretcoco-secretcocoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-secretcoco-secretcocoTests.release.xcconfig"; path = "Target Support Files/Pods-secretcoco-secretcocoTests/Pods-secretcoco-secretcocoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5875CF8EDB95D3F625FBF2F /* Pods-C3poApp-C3poAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C3poApp-C3poAppTests.release.xcconfig"; path = "Target Support Files/Pods-C3poApp-C3poAppTests/Pods-C3poApp-C3poAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				390B6F4BEBD1969EE00017B7 /* libPods-secretcoco-secretcocoTests.a in Frameworks */,
+				390B6F4BEBD1969EE00017B7 /* libPods-C3poApp-C3poAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,20 +61,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6048CB5EB8AA1CDAE7425138 /* libPods-secretcoco.a in Frameworks */,
+				6048CB5EB8AA1CDAE7425138 /* libPods-C3poApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* secretcocoTests */ = {
+		00E356EF1AD99517003FC87E /* C3poAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* secretcocoTests.m */,
+				00E356F21AD99517003FC87E /* C3poAppTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = secretcocoTests;
+			path = C3poAppTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -91,7 +85,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* secretcoco */ = {
+		13B07FAE1A68108700A75B9A /* C3poApp */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -102,7 +96,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = secretcoco;
+			name = C3poApp;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -110,10 +104,8 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				5E9E118C93DA10CA0833A49A /* libPods-secretcoco.a */,
-				4BD7A3282C5C999EFD8B9A4A /* libPods-secretcoco-secretcocoTests.a */,
-				75AC6D730739F712BE119BC2 /* libPods-secretcoco-tvOS.a */,
-				07C43AA92CF2EAA4D2AC4B1E /* libPods-secretcoco-tvOSTests.a */,
+				5E9E118C93DA10CA0833A49A /* libPods-C3poApp.a */,
+				4BD7A3282C5C999EFD8B9A4A /* libPods-C3poApp-C3poAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,9 +120,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* secretcoco */,
+				13B07FAE1A68108700A75B9A /* C3poApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* secretcocoTests */,
+				00E356EF1AD99517003FC87E /* C3poAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				B566F8338CA0D3EDA4009E04 /* Pods */,
@@ -143,8 +135,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Secret Coco.app */,
-				00E356EE1AD99517003FC87E /* secretcocoTests.xctest */,
+				13B07F961A680F5B00A75B9A /* C3PO.app */,
+				00E356EE1AD99517003FC87E /* C3poAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,14 +144,10 @@
 		B566F8338CA0D3EDA4009E04 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E61BEFCA663BC4E07E066B56 /* Pods-secretcoco.debug.xcconfig */,
-				1CE9F219FC747F3A91179683 /* Pods-secretcoco.release.xcconfig */,
-				72DF6C38D2C3077BFE1D574F /* Pods-secretcoco-secretcocoTests.debug.xcconfig */,
-				F5875CF8EDB95D3F625FBF2F /* Pods-secretcoco-secretcocoTests.release.xcconfig */,
-				07A9BBDA317E76FFCB57ECF3 /* Pods-secretcoco-tvOS.debug.xcconfig */,
-				C3F2A69549FD9EDDE90689BB /* Pods-secretcoco-tvOS.release.xcconfig */,
-				64E8B890B1895BC1D4C7F7D9 /* Pods-secretcoco-tvOSTests.debug.xcconfig */,
-				C33617D45BEBA4779DDAF5AE /* Pods-secretcoco-tvOSTests.release.xcconfig */,
+				E61BEFCA663BC4E07E066B56 /* Pods-C3poApp.debug.xcconfig */,
+				1CE9F219FC747F3A91179683 /* Pods-C3poApp.release.xcconfig */,
+				72DF6C38D2C3077BFE1D574F /* Pods-C3poApp-C3poAppTests.debug.xcconfig */,
+				F5875CF8EDB95D3F625FBF2F /* Pods-C3poApp-C3poAppTests.release.xcconfig */
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -167,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* secretcocoTests */ = {
+		00E356ED1AD99517003FC87E /* C3poAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "secretcocoTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "C3poAppTests" */;
 			buildPhases = (
 				DA290826130B60966EBE56D6 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -182,14 +170,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = secretcocoTests;
-			productName = secretcocoTests;
-			productReference = 00E356EE1AD99517003FC87E /* secretcocoTests.xctest */;
+			name = C3poAppTests;
+			productName = C3poAppTests;
+			productReference = 00E356EE1AD99517003FC87E /* C3poAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* secretcoco */ = {
+		13B07F861A680F5B00A75B9A /* C3poApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "secretcoco" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "C3poApp" */;
 			buildPhases = (
 				A4221E21436BB68C55293516 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -203,9 +191,9 @@
 			);
 			dependencies = (
 			);
-			name = secretcoco;
-			productName = secretcoco;
-			productReference = 13B07F961A680F5B00A75B9A /* Secret Coco.app */;
+			name = C3poApp;
+			productName = C3poApp;
+			productReference = 13B07F961A680F5B00A75B9A /* C3PO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "secretcoco" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "C3poApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -240,8 +228,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* secretcoco */,
-				00E356ED1AD99517003FC87E /* secretcocoTests */,
+				13B07F861A680F5B00A75B9A /* C3poApp */,
+				00E356ED1AD99517003FC87E /* C3poAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,7 +274,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-secretcoco-secretcocoTests/Pods-secretcoco-secretcocoTests-frameworks.sh"
+				"${PODS_ROOT}/Target Support Files/Pods-C3poApp-C3poAppTests/Pods-C3poApp-C3poAppTests-frameworks.sh"
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -294,7 +282,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-secretcoco-secretcocoTests/Pods-secretcoco-secretcocoTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-C3poApp-C3poAppTests/Pods-C3poApp-C3poAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A4221E21436BB68C55293516 /* [CP] Check Pods Manifest.lock */ = {
@@ -312,7 +300,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-secretcoco-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-C3poApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -334,7 +322,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-secretcoco-secretcocoTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-C3poApp-C3poAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -347,7 +335,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-secretcoco/Pods-secretcoco-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-C3poApp/Pods-C3poApp-frameworks.sh",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -355,7 +343,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-secretcoco/Pods-secretcoco-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-C3poApp/Pods-C3poApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -384,7 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* secretcocoTests.m in Sources */,
+				00E356F31AD99517003FC87E /* C3poAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +390,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* secretcoco */;
+			target = 13B07F861A680F5B00A75B9A /* C3poApp */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -414,7 +402,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = secretcoco;
+			path = C3poApp;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -422,7 +410,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72DF6C38D2C3077BFE1D574F /* Pods-secretcoco-secretcocoTests.debug.xcconfig */;
+			baseConfigurationReference = 72DF6C38D2C3077BFE1D574F /* Pods-C3poApp-C3poAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -431,7 +419,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = secretcocoTests/Info.plist;
+				INFOPLIST_FILE = C3poAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -441,18 +429,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Secret Coco.app/Secret Coco";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/C3PO.app/C3PO";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5875CF8EDB95D3F625FBF2F /* Pods-secretcoco-secretcocoTests.release.xcconfig */;
+			baseConfigurationReference = F5875CF8EDB95D3F625FBF2F /* Pods-C3poApp-C3poAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = secretcocoTests/Info.plist;
+				INFOPLIST_FILE = C3poAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -462,13 +450,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Secret Coco.app/Secret Coco";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/C3PO.app/C3PO";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E61BEFCA663BC4E07E066B56 /* Pods-secretcoco.debug.xcconfig */;
+			baseConfigurationReference = E61BEFCA663BC4E07E066B56 /* Pods-C3poApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -479,7 +467,7 @@
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = secretcoco/Info.plist;
+				INFOPLIST_FILE = C3poApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.1;
@@ -488,8 +476,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.secretarium.app.secretcoco;
-				PRODUCT_NAME = "Secret Coco";
+				PRODUCT_BUNDLE_IDENTIFIER = com.secretarium.app.C3poApp;
+				PRODUCT_NAME = "C3PO";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -498,12 +486,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CE9F219FC747F3A91179683 /* Pods-secretcoco.release.xcconfig */;
+			baseConfigurationReference = 1CE9F219FC747F3A91179683 /* Pods-C3poApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = secretcoco/Info.plist;
+				INFOPLIST_FILE = C3poApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.1;
@@ -512,8 +500,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.secretarium.app.secretcoco;
-				PRODUCT_NAME = "Secret Coco";
+				PRODUCT_BUNDLE_IDENTIFIER = com.secretarium.app.C3poApp;
+				PRODUCT_NAME = "C3PO";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -635,7 +623,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "secretcocoTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "C3poAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -644,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "secretcoco" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "C3poApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -653,7 +641,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "secretcoco" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "C3poApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

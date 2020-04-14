@@ -5,6 +5,5 @@ export default createLogger({
     collapsed: true,
 
     // only log in development mode
-    // eslint-disable-next-line no-undef
-    predicate: () => __DEV__,
+    predicate: () => __DEV__
 });

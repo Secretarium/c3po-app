@@ -25,4 +25,4 @@ export const Providers: React.FC = ({ children }) => {
             </PersistGate>
         </Provider>
     );
-}
+};

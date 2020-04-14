@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, Image } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 
 const slides = [
@@ -8,21 +8,21 @@ const slides = [
         title: 'Title 1',
         text: 'Description.\nSay something cool',
         // image: require('./assets/1.jpg'),
-        backgroundColor: '#59b2ab',
+        backgroundColor: '#59b2ab'
     },
     {
         key: 2,
         title: 'Title 2',
         text: 'Other cool stuff',
         // image: require('./assets/2.jpg'),
-        backgroundColor: '#febe29',
+        backgroundColor: '#febe29'
     },
     {
         key: 3,
         title: 'Rocket guy',
         text: 'I\'m already out of descriptions\n\nLorem ipsum bla bla bla',
         // image: require('./assets/3.jpg'),
-        backgroundColor: '#22bcb5',
+        backgroundColor: '#22bcb5'
     }
 ];
 
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(0, 0, 0, .2)',
         borderRadius: 20,
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'center'
     },
     title: {
         color: 'black'
@@ -50,7 +50,7 @@ export const TestIntro: React.FC = () => {
 
     const [showRealApp, setShowRealApp] = useState(false);
 
-    const _renderItem = ({ item }) => {
+    const _renderItem = ({ item }: { item: { [key: string]: string } }): React.ReactNode => {
         return (
             <View style={styles.slide}>
                 <Text style={styles.title}>{item.title}</Text>
@@ -58,12 +58,11 @@ export const TestIntro: React.FC = () => {
                 <Text style={styles.text}>{item.text}</Text>
             </View>
         );
-    }
-    const _onDone = () => {
+    };
+    const _onDone = (): void => {
         setShowRealApp(true);
-    }
+    };
 
-    if (showRealApp)
-        return <Text>All done !</Text>;
+    if (showRealApp) { return <Text>All done !</Text>; }
     return <AppIntroSlider renderItem={_renderItem} data={slides} onDone={_onDone} showNextButton />;
 };
