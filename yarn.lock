@@ -1676,9 +1676,9 @@
     color "^3.1.2"
     react-native-iphone-x-helper "^1.2.1"
 
-"@secretarium/react-native-ble@secretarium/c3po-react-native-ble#master":
+"@secretarium/react-native-ble@https://github.com/secretarium/c3po-react-native-ble#ce5d145a":
   version "0.1.0"
-  resolved "https://codeload.github.com/secretarium/c3po-react-native-ble/tar.gz/d3b0a0ff93b3e69b349a18d89cb79519533f7c94"
+  resolved "https://github.com/secretarium/c3po-react-native-ble#ce5d145a087efa76f830f3df8272e2c36745e794"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -11176,6 +11176,11 @@ react-native-modal@^11.0.2:
   dependencies:
     prop-types "^15.6.2"
     react-native-animatable "1.3.3"
+
+react-native-permissions@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-2.1.1.tgz#b217e8da12a137b85d65c966c7bf2af63dbe452b"
+  integrity sha512-nIBzmePuue9njl8aK4vaUhoEq86TAkd+ymmK97SaGOI8OtQKCWPNuY1IPKydChysfWOUZd8Du0Sjab4YvubscA==
 
 react-native-reanimated@1.8.0:
   version "1.8.0"

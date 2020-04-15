@@ -6,8 +6,8 @@ import React from 'react';
 import { StatusBar } from 'react-native';
 import StorybookUI from '../storybook';
 import { Providers } from './Providers';
-import TestAnimation from './TestAnimation';
-// import { TestBeacon } from './components/TestBeacon';
+// import TestAnimation from './TestAnimation';
+import { TestBeacon } from './components/TestBeacon';
 import { Navigator, Screen } from './modules/navigation/Navigator';
 
 const App: React.FC = () => {
@@ -17,7 +17,7 @@ const App: React.FC = () => {
             <Navigator initialRouteName="Home">
                 <Screen name="Home" options={{
                     title: 'Beta software'
-                }} component={TestAnimation} />
+                }} component={TestBeacon} />
                 {__DEV__ ? <Screen name="Storybook" component={StorybookUI} /> : undefined}
             </Navigator>
         </Providers>

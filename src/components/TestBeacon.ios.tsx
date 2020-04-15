@@ -1,55 +1,62 @@
-import React, { useEffect, useState } from 'react';
-import C3POBLE from '@secretarium/react-native-ble';
-import { NativeEventEmitter, NativeModules, Text } from 'react-native';
-const eventEmitter = new NativeEventEmitter(NativeModules.C3POBLE);
+import React, { useEffect, useState, useCallback } from 'react';
+import C3POReactNativeBle from '@secretarium/react-native-ble';
+import { NativeEventEmitter, NativeModules, Text, Button } from 'react-native';
+const eventEmitter = new NativeEventEmitter(NativeModules.C3POReactNativeBle);
 
 export const TestBeacon: React.FC = () => {
 
-    const [successScan, setSuccessScan] = useState('unknown');
-    const [successBroad, setSuccessBroad] = useState('unknown');
-    const [devices, setDevices] = useState<unknown[]>([]);
+    const [successScan, setSuccessScan] = useState(false);
+    const [successBroad, setSuccessBroad] = useState(false);
+    const [devices, setDevices] = useState<{ [key: string]: any }>({});
+
+    const onDeviceFound = useCallback((event: any): void => {
+        setDevices({
+            ...devices,
+            [event.identifier]: event
+        });
+    }, [devices]);
 
     useEffect(() => {
-        // eventEmitter.addListener('onBTStatusChange', (enabled: true) => {
-        //     console.log("iOS, Bluetooth status: ", enabled);
-        // });
-
-        C3POBLE.setCompanyId(0xFFFF);
-        eventEmitter.addListener('onDeviceReady', () => {
-            C3POBLE.broadcast('00420000-0000-0000-0000-000000000000', [12, 23, 56]) // The UUID you would like to advertise and additional manufacturer data.
-                .then((success: React.SetStateAction<string>) => {
-                    setSuccessBroad(success);
-                    console.log('iOS, Broadcasting Successful', success);
-                })
-                .catch((error: Error) => console.log('iOS, Broadcasting Error', error));
-            C3POBLE.scan([12, 23, 56], {})
-                .then((success: React.SetStateAction<string>) => {
-                    setSuccessScan(success);
-                    eventEmitter.addListener('onDeviceFound', (event) => {
-                        console.log(event); // "device data"
-                        setDevices([...devices, event]);
-                    });
-                    console.log('iOS, Scan Successful', success);
-                })
-                .catch((error: Error) => console.log('iOS, Scan Error', error));
-        });
-
+        C3POReactNativeBle.setManufacturerId(0xFFFF);
+        eventEmitter.addListener('onDeviceFound', onDeviceFound);
         return (): void => {
-            eventEmitter.removeAllListeners('onDeviceFound');
-            C3POBLE.stopScan()
-                .then((success: string) => console.log('iOS, Stop Scan Successful', success))
-                .catch((error: Error) => console.log('iOS, Stop Scan Error', error));
-            C3POBLE.stopBroadcast()
-                .then((success: string) => console.log('iOS, Stop Broadcast Successful', success))
-                .catch((error: Error) => console.log('iOS, Stop Broadcast Error', error));
+            eventEmitter.removeListener('onDeviceFound', onDeviceFound);
         };
-    }, [devices]);
+    }, [onDeviceFound]);
+
+    const startAction = (): void => {
+        C3POReactNativeBle.broadcast('00420000-0000-0000-0000-000000000000', [12, 23, 56])
+            .then((success) => {
+                if (success instanceof Error) { return; }
+                setSuccessBroad(success);
+                console.log('iOS, Broadcasting...', success);
+            })
+            .catch((error: Error) => { return; });
+        C3POReactNativeBle.scan()
+            .then((success) => {
+                setSuccessScan(success);
+                console.log('iOS, Scaning...', success);
+            })
+            .catch((error: Error) => { return; });
+    };
+
+    const stopAction = (): void => {
+        C3POReactNativeBle.stopScan()
+            .then((success: boolean) => console.log('iOS, Stopped Scanning', success))
+            .catch((error: Error) => console.log('iOS, Stopped Scanning', error));
+        C3POReactNativeBle.stopBroadcast()
+            .then((success: boolean) => console.log('iOS, Stopped Broadcast', success))
+            .catch((error: Error) => console.log('iOS, Stopped Broadcast', error));
+
+    };
 
     return (
         <>
+            <Button title="Start" onPress={startAction}>Start</Button>
+            <Button title="Stop" onPress={stopAction}>Stop</Button>
             <Text>Scanning {successScan}</Text>
             <Text>Broadcasting {successBroad}</Text>
-            <Text>Devices ({devices.length}) {devices}</Text>
+            <Text>Devices ({Object.keys(devices).length}) {JSON.stringify(Object.values(devices).filter(device => device.services.length > 0).map(device => `${device.name ?? ''} > ${device.services?.[0] ?? ''}`), null, 2)}</Text>
         </>
     );
 };
