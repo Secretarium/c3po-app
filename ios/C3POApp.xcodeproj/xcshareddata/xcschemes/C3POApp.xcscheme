@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
                BuildableName = "C3PO.app"
-               BlueprintName = "C3poApp"
-               ReferencedContainer = "container:C3poApp.xcodeproj">
+               BlueprintName = "C3POApp"
+               ReferencedContainer = "container:C3POApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "C3poAppTests.xctest"
-               BlueprintName = "C3poAppTests"
-               ReferencedContainer = "container:C3poApp.xcodeproj">
+               BuildableName = "C3POAppTests.xctest"
+               BlueprintName = "C3POAppTests"
+               ReferencedContainer = "container:C3POApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,8 +56,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "C3PO.app"
-            BlueprintName = "C3poApp"
-            ReferencedContainer = "container:C3poApp.xcodeproj">
+            BlueprintName = "C3POApp"
+            ReferencedContainer = "container:C3POApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -73,7 +73,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "C3PO.app"
-            BlueprintName = "C3poApp"
+            BlueprintName = "C3POApp"
             ReferencedContainer = "container:C3poApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

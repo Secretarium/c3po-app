@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface C3poAppTests : XCTestCase
+@interface C3POAppTests : XCTestCase
 
 @end
 
-@implementation C3poAppTests
+@implementation C3POAppTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {
