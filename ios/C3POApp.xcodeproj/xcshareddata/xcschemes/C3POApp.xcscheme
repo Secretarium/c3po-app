@@ -74,7 +74,7 @@
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "C3PO.app"
             BlueprintName = "C3POApp"
-            ReferencedContainer = "container:C3poApp.xcodeproj">
+            ReferencedContainer = "container:C3POApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

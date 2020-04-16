@@ -457,7 +457,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  c3po-react-native-ble: e9067d30f936dad4d37468cdcb047a51e52efd46
+  c3po-react-native-ble: efe1c5eecef7d67dc4b6492aaa6b67ba7e355094
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
@@ -501,6 +501,6 @@ SPEC CHECKSUMS:
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 4385e33ac85a3eddc15d8fd4089f788f1bd6ea2d
+PODFILE CHECKSUM: ef90c8d985a01addac782fc075a029d15f2e4fff
 
 COCOAPODS: 1.9.1

@@ -36,7 +36,7 @@
     "homepage": "https://github.com/secretarium/c3po-app#readme",
     "dependencies": {
         "@react-native-community/async-storage": "1.9.0",
-        "@secretarium/react-native-ble": "https://github.com/secretarium/c3po-react-native-ble#ce5d145a",
+        "@secretarium/react-native-ble": "https://github.com/secretarium/c3po-react-native-ble#e2b4bb8",
         "lottie-ios": "3.1.8",
         "lottie-react-native": "3.3.2",
         "react": "16.13.1",
