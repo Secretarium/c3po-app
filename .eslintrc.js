@@ -69,7 +69,8 @@ module.exports = {
         },
         {
             files: [
-                '**/*.ts', '**/*.tsx'
+                '**/*.ts',
+                '**/*.tsx'
             ],
             globals: {
                 Atomics: 'readonly',
