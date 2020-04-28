@@ -9,7 +9,7 @@ const { getDefaultConfig } = require('metro-config');
 
 module.exports = (async () => {
     const {
-        resolver: { sourceExts }
+        resolver: { sourceExts, assetExts }
     } = await getDefaultConfig();
     return {
         transformer: {
@@ -19,10 +19,11 @@ module.exports = (async () => {
                     inlineRequires: false
                 }
             }),
-            babelTransformerPath: require.resolve('react-native-less-transformer')
+            babelTransformerPath: require.resolve('./metro.transform.js')
         },
         resolver: {
-            sourceExts: [...sourceExts, 'less']
+            assetExts: assetExts.filter(ext => ext !== 'svg'),
+            sourceExts: [...sourceExts, 'less', 'svg']
         }
     };
 })();

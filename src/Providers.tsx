@@ -3,7 +3,7 @@ import { ActivityIndicator, View } from 'react-native';
 import KeepAwake from 'react-native-keep-awake';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import { NavigationContainer } from '@react-navigation/native';
+import { NativeRouter } from 'react-router-native';
 
 import { store, persistor } from './redux/store';
 
@@ -18,10 +18,10 @@ export const Providers: React.FC = ({ children }) => {
                 )}
                 persistor={persistor}
             >
-                <NavigationContainer>
+                <NativeRouter>
                     {__DEV__ ? <KeepAwake /> : undefined}
                     {children}
-                </NavigationContainer>
+                </NativeRouter>
             </PersistGate>
         </Provider>
     );

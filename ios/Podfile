@@ -79,6 +79,8 @@ target 'C3POApp' do
 
   pod 'Permission-BluetoothPeripheral', :path => "../node_modules/react-native-permissions/ios/BluetoothPeripheral.podspec"
 
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
   target 'C3POAppTests' do
     inherit! :complete
     # Pods for testing

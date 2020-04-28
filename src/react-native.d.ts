@@ -9,5 +9,11 @@ declare module 'react-native' {
     interface ButtonProps {
         className?: string;
     }
+    interface ViewProps {
+        className?: string;
+    }
+    interface ImageProps {
+        className?: string;
+    }
 }
 

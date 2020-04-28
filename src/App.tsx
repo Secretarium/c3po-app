@@ -4,22 +4,25 @@
 
 import React from 'react';
 import { StatusBar } from 'react-native';
+import { Route, Switch } from 'react-router-native';
 import StorybookUI from '../storybook';
 import { Providers } from './Providers';
-// import TestAnimation from './TestAnimation';
-import { TestBeacon } from './components/TestBeacon';
-import { Navigator, Screen } from './modules/navigation/Navigator';
+import Welcome from './components/Welcome';
+import Bluetooth from './components/Bluetooth';
+import Exposure from './components/Exposure';
+import Scanning from './components/Scanning';
 
 const App: React.FC = () => {
     return (
         <Providers>
-            <StatusBar barStyle="dark-content" animated={true} />
-            <Navigator initialRouteName="Home">
-                <Screen name="Home" options={{
-                    title: 'Beta software'
-                }} component={TestBeacon} />
-                {__DEV__ ? <Screen name="Storybook" component={StorybookUI} /> : undefined}
-            </Navigator>
+            <StatusBar barStyle="dark-content" backgroundColor="white" animated={true} />
+            {__DEV__ ? <Route path="/storybook" component={StorybookUI} /> : undefined}
+            <Switch>
+                <Route path="/bluetooth" component={Bluetooth} />
+                <Route path="/exposure" component={Exposure} />
+                <Route path="/scanning" component={Scanning} />
+                <Route path="/" component={Welcome} />
+            </Switch>
         </Providers>
     );
 };
