@@ -37,6 +37,7 @@
     "dependencies": {
         "@react-native-community/async-storage": "1.9.0",
         "@secretarium/react-native-ble": "https://github.com/secretarium/c3po-react-native-ble#e2b4bb8",
+        "@secretarium/react-native-exposure-notification": "https://github.com/secretarium/c3po-react-native-exposure-notification#b840994a",
         "lottie-ios": "3.1.8",
         "lottie-react-native": "3.3.2",
         "react": "16.13.1",

@@ -1787,9 +1787,13 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/eslint-plugin/-/eslint-plugin-1.1.0.tgz#e42b1bef12d2415411519fd528e64b593b1363dc"
   integrity sha512-W/J0fNYVO01tioHjvYWQ9m6RgndVtbElzYozBq1ZPrHO/iCzlqoySHl4gO/fpCl9QEFjvJfjPgtPMTMlsoq5DQ==
 
-"@secretarium/react-native-ble@https://github.com/secretarium/c3po-react-native-ble#ce5d145a":
+"@secretarium/react-native-ble@https://github.com/secretarium/c3po-react-native-ble#e2b4bb8":
   version "0.1.0"
-  resolved "https://github.com/secretarium/c3po-react-native-ble#ce5d145a087efa76f830f3df8272e2c36745e794"
+  resolved "https://github.com/secretarium/c3po-react-native-ble#e2b4bb8d2a0fbb72fef5732ce4ff354b9ca4e777"
+
+"@secretarium/react-native-exposure-notification@https://github.com/secretarium/c3po-react-native-exposure-notification#b840994a":
+  version "0.1.0"
+  resolved "https://github.com/secretarium/c3po-react-native-exposure-notification#b840994a14ae875f6565e31b9ca746be22d01115"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
